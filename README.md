@@ -29,7 +29,7 @@ Dezipper les 2 fichiers dans les dossiers :
 - "data/gtFine/"
 - "data/leftImg8bit/"
 
-Chacun des dossier doit contenir les 3 suivants :
+Chacun des dossiers doit contenir les 3 suivants :
 
 - "test/"
 - "train/"
