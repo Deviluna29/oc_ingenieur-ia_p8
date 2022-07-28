@@ -134,3 +134,5 @@ dmypy.json
 #data
 gtFine/
 leftImg8bit/
+data_redim/
+saved/
