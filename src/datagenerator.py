@@ -63,7 +63,7 @@ class DataGenerator(Sequence):
 
     def __data_generation(self, batch_x, batch_y):
 
-        X = np.array([cv2.resize(cv2.imread(path_X), self.dim) for path_X in batch_x])
+        X = np.array([cv2.resize(cv2.cvtColor(cv2.imread(path_X), cv2.COLOR_BGR2RGB), self.dim) for path_X in batch_x])
         y = np.array([cv2.resize(self._convert_mask(cv2.imread(path_y,0)), self.dim) for path_y in batch_y])
 
         if self.augmentation:
@@ -80,7 +80,7 @@ class DataGenerator(Sequence):
                 if i in self.cats[cat]:
                     mask[:,:,self.cats_id[cat]] = np.logical_or(mask[:,:,self.cats_id[cat]],(img==i))
                     break
-
+        
         return np.array(mask, dtype='uint8')
 
 
