@@ -35,7 +35,9 @@ Chacun des dossiers doit contenir les 3 suivants :
 
 ## Application Web
 
-Url de l'application : <a href = http://ocp8-segmentation.azurewebsites.net/>http://ocp8-segmentation.azurewebsites.net/</a>
+Url de l'application, hébergée sur Azure App : <a href = http://ocp8-segmentation.azurewebsites.net/>http://ocp8-segmentation.azurewebsites.net/</a>
+
+(Après 20min d'inactivité, Azure App stop l'application. En cas de nouvelle requête il faut donc attendre quelques minutes pour que l'application redémarre)
 
 Endpoint pour la segmentation d'une image :
 
